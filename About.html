@@ -21,37 +21,38 @@
                     <span class="texto">LopMon</span>
                 </a>
             </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="index.html" id="navbarDropdown">
-                     Home
-                    </a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link" href="About.html" id="navbarDropdown">
-                      Sobre Nosotros
-                    </a>
-                  </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#" id="navbarDropdown">
-                  Productos
-                </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="contacto.html" id="navbarDropdown">
-                    Contacto
-                </a>
-              </li>
-                </div>
-              </li>
-            </ul>
-          </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </label>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="About.html">Sobre Nosotros</a>
+                    </li>
+                    <ul class="nav1">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Productos <span class="arrow-down"></span></a>
+                            <div class="dropdown-content">
+                                <a href="#">Monitores</a>
+                                <a href="#">GPU</a>
+                                <a href="#">Accesorios</a>
+                                <a href="#">Gabinetes</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                     
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
 </header>
       <div id="productoSeleccionado" style="padding: 20px; text-align: center;"></div>
     <div class="salto2"></div>
