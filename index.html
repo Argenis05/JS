@@ -4,9 +4,10 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
-    <link rel="icon" href="imagenesIndex/logoLo.ico"image/x-icon">
+    <link rel="icon" href="imagenesIndex/logoLo.ico">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/navbar.css'>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -19,7 +20,7 @@
 <body>
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-custom">
-            <div class="container-fluid">
+            
                 <div class="contenedor">
                     <a href="index.html" class="icono-lopmon">
                         <i class="fas fa-robot"></i>
@@ -42,10 +43,10 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link" href="#">Productos <span class="arrow-down"></span></a>
                                 <div class="dropdown-content">
-                                    <a href="#">Monitores</a>
-                                    <a href="#">GPU</a>
-                                    <a href="#">Accesorios</a>
-                                    <a href="#">Gabinetes</a>
+                                    <a href="#monitores">Monitores</a>
+                                    <a href="#tarjetas">Tarjetas Graficas</a>
+                                    <a href="#accesorios">Accesorios</a>
+                                    <a href="#memorias">Memorias ram</a>
                                 </div>
                             </li>
                         </ul>
@@ -62,54 +63,54 @@
                         </li>
                         <a href="#" class="carrito">
                             <i class="fas fa-shopping-cart"></i>
-                           
                         </a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="login.html">Iniciar sesión</a>
+                        </li>
                     </ul>
                 </div>
-            </div>
         </nav>
     </header>
     <div class="salto2"></div>
-    <h2>Monitores</h2>
+    <h2 id="monitores">Monitores</h2>
     <div class="gallery">
-        
         <div class="product">
             <img src="Monitores/monitor1.jpeg" alt="Producto 1">
             <div class="product-info">
-                <h3>Producto 1</h3>
-                <p class="price">$25.99</p>
+                <h3>Monitor Dell 24"</h3>
+                <p class="price">$1300</p>
                 <button>Agregar al carrito</button>
             </div>
         </div>
         <div class="product">
             <img src="Monitores/monitor2.jpeg" alt="Producto 2">
             <div class="product-info">
-                <h3>Producto 2</h3>
-                <p class="price">$20.99</p>
+                <h3>Monitor Samsung 27"</h3>
+                <p class="price">$2099</p>
                 <button>Agregar al carrito</button>
             </div>
         </div>
         <div class="product">
             <img src="Monitores/monitor3.jpeg" alt="Producto 3">
             <div class="product-info">
-                <h3>Producto 3</h3>
-                <p class="price">$30.00</p>
+                <h3>Monitor Dell 21"</h3>
+                <p class="price">$1000</p>
                 <button>Agregar al carrito</button>
             </div>
         </div>
         <div class="product">
             <img src="Monitores/monitor4.avif" alt="Producto 3">
             <div class="product-info">
-                <h3>Producto 4</h3>
-                <p class="price">$30.00</p>
+                <h3>Monitor Asus V2 23"</h3>
+                <p class="price">$3000</p>
                 <button>Agregar al carrito</button>
             </div>
         </div>
         <div class="product">
-            <img src="Monitores/monitor5.jpg" alt="Producto 3">
+            <img src="Monitores/monitor5.png" alt="Producto 3">
             <div class="product-info">
-                <h3>Producto 5</h3>
-                <p class="price">$30.00</p>
+                <h3>Monitor Yeyian curvo 27"</h3>
+                <p class="price">$3200</p>
                 <button>Agregar al carrito</button>
             </div>
         </div>
@@ -121,46 +122,46 @@
 
 <!-- Graficas -->
 
-    <h2>Tarjetas graficas</h2>
+    <h2 id="tarjetas">Tarjetas graficas</h2>
     <div class="gallery">
         
         <div class="product">
             <img src="Graficas/producto1.jpg" alt="Producto 1">
             <div class="product-info">
-                <h3>Producto 1</h3>
-                <p class="price">$25.99</p>
+                <h3>GeForce RTX 4090</h3>
+                <p class="price">$21599</p>
                 <button>Agregar al carrito</button>
             </div>
         </div>
         <div class="product">
             <img src="Graficas/producto2.webp" alt="Producto 2">
             <div class="product-info">
-                <h3>Producto 2</h3>
-                <p class="price">$15.99</p>
+                <h3>GeForce RTX 4080</h3>
+                <p class="price">$15990</p>
                 <button>Agregar al carrito</button>
             </div>
         </div>
         <div class="product">
             <img src="Graficas/producto3.jpeg" alt="Producto 3">
             <div class="product-info">
-                <h3>Producto 3</h3>
-                <p class="price">$30.00</p>
+                <h3>GeForce GTX 1660 Ti</h3>
+                <p class="price">$11454</p>
                 <button>Agregar al carrito</button>
             </div>
         </div>
         <div class="product">
             <img src="Graficas/producto4.jpeg" alt="Producto 3">
             <div class="product-info">
-                <h3>Producto 4</h3>
-                <p class="price">$30.00</p>
+                <h3>GeForce RTX 4070 Ti</h3>
+                <p class="price">$12300</p>
                 <button>Agregar al carrito</button>
             </div>
         </div>
         <div class="product">
             <img src="Graficas/producto5.jpeg" alt="Producto 3">
             <div class="product-info">
-                <h3>Producto 5</h3>
-                <p class="price">$30.00</p>
+                <h3>NVIDIA Titan RTX</h3>
+                <p class="price">$13000</p>
                 <button>Agregar al carrito</button>
             </div>
         </div>
@@ -169,7 +170,7 @@
 
     <!-- Accesorios  -->
 
-    <h2>Accesorios para computadora </h2>
+    <h2 id="accesorios">Accesorios para computadora </h2>
     <div class="gallery">
         
         <div class="product">
@@ -214,7 +215,51 @@
         </div>
         
     </div>
-
+    <h2 id="memorias">Memorias ram</h2>
+    <div class="gallery">
+        
+        <div class="product">
+            <img src="ram/ram1.webp" alt="Producto 1">
+            <div class="product-info">
+                <h3>Producto 1</h3>
+                <p class="price">$25.99</p>
+                <button>Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="ram/ram2.webp"alt="Producto 2">
+            <div class="product-info">
+                <h3>Producto 2</h3>
+                <p class="price">$15.99</p>
+                <button>Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="ram/ram3.jpg" alt="Producto 3">
+            <div class="product-info">
+                <h3>Producto 3</h3>
+                <p class="price">$30.00</p>
+                <button>Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="ram/ram4.webp" alt="Producto 3">
+            <div class="product-info">
+                <h3>Producto 4</h3>
+                <p class="price">$30.00</p>
+                <button>Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="ram/ram5.avif" alt="Producto 3">
+            <div class="product-info">
+                <h3>Producto 5</h3>
+                <p class="price">$30.00</p>
+                <button>Agregar al carrito</button>
+            </div>
+        </div>
+        
+    </div>
         <!-- Agrega más productos aquí -->
     </div>
 

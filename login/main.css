@@ -1,0 +1,85 @@
+#miCuerpo {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.container {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: space-between; /* Espacia la imagen y el formulario */
+    padding: 110px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-izquierda {
+    flex: 1; /* La imagen ocupa una parte del contenedor */
+}
+
+.imagen {
+    width: 100%; /* La imagen ocupa todo el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.form-container {
+    flex: 1; /* El formulario ocupa la otra parte del contenedor */
+    padding: 20px;
+}
+
+.form-container .form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form h2 {
+    margin-bottom: 20px;
+}
+
+.form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form button {
+    padding: 10px;
+    background-color: rgb(96, 11, 122);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #110a0a;
+}
+
+.form p {
+    text-align: center;
+}
+
+.form a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+#login-form,#registro-form h2 {
+    color: rgb(96, 11, 122); /* Cambia 'blue' por el color que desees */
+    text-align: center;
+    
+}

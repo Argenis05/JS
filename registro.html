@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='CSS/main.css'¿>
-    <link rel='stylesheet' type='text/css' media='screen' href='CSS/navbar.css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='login/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href="CSS/navbar.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src='main.js'></script>
+    <title>Login y Crear Cuenta</title>
 </head>
 <body>
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-custom">
-            
                 <div class="contenedor">
                     <a href="index.html" class="icono-lopmon">
                         <i class="fas fa-robot"></i>
@@ -37,18 +35,16 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link" href="#">Productos <span class="arrow-down"></span></a>
                                 <div class="dropdown-content">
-                                    <a href="/index.html#monitores">Monitores</a>
-                                    <a href="/index.html#tarjetas">Tarjetas Graficas</a>
-                                    <a href="/index.html#accesorios">Accesorios</a>
-                                    <a href="/index.html#memorias">Memorias ram</a>
+                                    <a href="#">Monitores</a>
+                                    <a href="#">GPU</a>
+                                    <a href="#">Accesorios</a>
+                                    <a href="#">Gabinetes</a>
                                 </div>
                             </li>
                         </ul>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
-                        
-                        
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="login.html">Iniciar sesión</a>
                         </li>
@@ -56,17 +52,21 @@
                 </div>
         </nav>
     </header>
-      
-    <div class="salto2"></div>
-    <img src="about/cpu.jpg" alt="Imagen ejemplo" class="centrada">
-    <h1 id="about">
-        En LopMon, nos especializamos en ofrecer una amplia gama de productos de hardware y componentes para computadoras, adaptados a las necesidades 
-        tanto de usuarios particulares como de profesionales de la tecnología. Nuestra misión es brindar soluciones innovadoras 
-        y de calidad para mejorar la experiencia digital de nuestros clientes. Con un catálogo de marcas líderes y un equipo de expertos siempre 
-        disponible, nos comprometemos a ofrecer productos confiables, atención personalizada y los mejores precios del mercado. ¡Transforma tu experiencia 
-        informática con nosotros!</h1>
-        
-     
-    
+    <div class="container">
+        <div class="imagen-izquierda">
+            <!-- Imagen que va al lado izquierdo -->
+            <img src="login/fotor.jpeg" alt="Imagen" class="imagen">
+        </div>
+        <div class="form-container">
+            <form class="form" id="registro-form">
+                <h2>Crear Cuenta</h2>
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit">Registrar</button>
+                <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
