@@ -1,36 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-*{
-    font-family:"Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 
 body{
+    background: url('fondo2.jpg?v=1');
     min-height: 100vh;
-    background:url('fondo2.jpg');
     background-size: cover;
     background-position: center;
-}
-.header{
-    position:fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    background-color: rgb(58, 5, 55);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100; ;
     
 }
 
 .salto{
-    height: 60px; /* Esto controla la altura del salto de línea */
+    height: 60px; /* Esto controla la altura del salto de línea background:url('/imagenesIndex/fondo2.jpg'); */
 }
 .salto2{
     height: 100px; /* Esto controla la altura del salto de línea */
@@ -39,60 +21,35 @@ body{
     height: 30px; /* Esto controla la altura del salto de línea */
 }
 h1 {
-    color:wheat ;
+    color:rgb(255, 255, 255) ;
     text-align: center;
     padding: 20px;
     margin: 100px auto;  /* Centra el h1 en su contenedor */
     width: fit-content;  /* Ajusta el ancho del h1 al tamaño del contenido */
 }
 h2 {
-    color:rgb(240, 239, 238) ;
+    color:rgb(189, 9, 9) ;
     text-align: center;
     padding: 20px;
     margin: 0px auto;  /* Centra el h1 en su contenedor */
     width: fit-content;  /* Ajusta el ancho del h1 al tamaño del contenido */
 }
+/* Imagen de about  */
 .centrada{
     padding: 30px;
     display: block;           /* Hace que la imagen sea un bloque */
     margin: 60px auto;         /* Centra la imagen y agrega un margen en la parte superior e inferior */
     width: 40%; 
+    
 }
 .logo img{
     height: 50px;  
     margin-right: 10px;
 }
-.titulos h1{
-    height: 10px;  
-    margin-right: 0px;
-}
 
-.navbar-custom {
-    background-color: rgb(58, 5, 55); /* Color morado */
-    width: 100%; /* Puedes ajustar el ancho a lo que necesites */
-  }
-  .navbar-custom .navbar-nav .nav-link {
-    color: white;
-    font-family: "Poppins", sans-serif;
-  }
-  .navbar-custom .navbar-nav .nav-link:hover {
-    color: #ffd54f; /* Color de hover dorado */
-  }
-  .navbar-custom .navbar-brand {
-    color: white;
-    font-family: "Poppins", sans-serif;
-  }
-  .navbar-custom .navbar-brand:hover {
-    color: #ffd54f; /* Color de hover dorado */
-  }
-  .navbar-custom .search-input {
-    width: 250px;
-  }
-  .icono-lopmon i {
-    font-size: 32px;
-    margin-right: 10px;
-    color: #f9fafc; /* Color del icono */
-  }
+
+
+
 /* Estilos del formulario */
 .contact-form {
     margin: 200px auto;
@@ -106,7 +63,7 @@ h2 {
 
 .contact-form h2 {
     margin-bottom: 20px;
-    color: rgb(72, 35, 82);
+    color: rgb(96, 11, 122);
 }
 
 .contact-form label {
@@ -124,7 +81,7 @@ h2 {
 }
 
 .contact-form button {
-    background-color: rgb(72, 35, 82);
+    background-color: rgb(96, 11, 122);
     color: white;
     padding: 10px;
     border: none;
@@ -134,9 +91,9 @@ h2 {
 }
 
 .contact-form button:hover {
-    background-color: rgb(72, 35, 82);
+    background-color: rgb(235, 51, 5);
 }
-/* Primera pagina */
+/* Primera pagina de productos  */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -177,14 +134,14 @@ h2 {
 }
 
 .price {
-    font-size: 1.1em;
-    color: #e67e22;
+    font-size: 2.1em;
+    color: #e90808;
     margin: 10px 0;
 }
 
 button {
     padding: 10px 20px;
-    background-color: rgb(230, 33, 7);
+    background-color: rgb(169, 7, 245);
     color: white;
     border: none;
     border-radius: 4px;
@@ -193,7 +150,7 @@ button {
 }
 
 button:hover {
-    background-color: #9ec72d;
+    background-color: #04c6f7;
 }
 
 
@@ -205,60 +162,93 @@ button:hover {
 .search-input:focus {
     width: 350px; /* Se expande más al hacer foco */
 }
-
-
-/* Efecto hover en el botón de búsqueda */
-  .navbar a::before{
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #fff;
-    transition: .3s;
+#about{
+    color: rgb(255, 255, 255); /* Blanco */
 }
-.contenedor .icono-lopmon {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    pointer-events: none;
  
-  }
-  
 
-  .icono-lopmon .texto {
-    font-family: "Poppins", sans-serif;
-    font-size: 19px;
-    color: #ecf0f3;
-    pointer-events: none;
+/*Sobre nosotros*/
 
-  }
-  /* Efecto hover para el menu con linea*/
-
-.navbar a:hover::before{
-width: 100%;
+#menu-slider {
+    font-family: sans-serif;
+    margin: auto;
+    background-color: rgb(8, 8, 8);
+    max-width: 800px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
 }
-  /* Carrito*/
-.carrito {
+
+#menu-slider>ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#menu-slider>ul.slider {
     position: relative;
-    font-size: 24px;
-    color: #fdfcfc;
-    text-decoration: none;
-  }
-  
-  .carrito i {
-    font-size: 32px;
-    padding: 5px;
-  }
-  
-  .contador {
+    max-width: 800px;
+    width: 100%;
+    height: 300px;
+}
+
+#menu-slider>ul.slider h1 {
     position: absolute;
-    top: -5px;
-    right: -5px;
-    background-color: red;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, -50%);
+}
+
+#menu-slider>ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background: #141414;
+}
+
+#menu-slider>ul.slider li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#menu-slider>ul.slider li:first-child {
+    opacity: 1;
+    /*Mostramos el primer <li>*/
+}
+
+#menu-slider>ul.slider li:target {
+    opacity: 1;
+    /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+#menu-slider>.menu {
+    text-align: center;
+    margin: 20px;
+}
+
+#menu-slider>.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+#menu-slider>.menu li a {
+    display: inline-block;
     color: white;
-    border-radius: 50%;
-    padding: 5px 10px;
-    font-size: 14px;
-  }
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+

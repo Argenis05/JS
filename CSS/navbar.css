@@ -1,0 +1,157 @@
+.navbar-custom {
+    background-color: rgb(96, 11, 122); /* Color morado */
+    width: 100%; /* Puedes ajustar el ancho a lo que necesites */
+    
+  }
+  .navbar-custom .navbar-nav .nav-link {
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  .navbar-custom .navbar-nav .nav-link:hover {
+    color: #0e0d0d; /* Color de hover dorado */
+  }
+  .navbar-custom .navbar-brand {
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  .navbar-custom .navbar-brand:hover {
+    color: #131312; /* Color de hover dorado */
+  }
+  .navbar-custom .search-input {
+    width: 250px;
+  }
+  .icono-lopmon i {
+    font-size: 32px;
+    margin-right: 10px;
+    color: #f9fafc; /* Color del icono */
+  }
+  /* Efecto al hacer hover sobre el campo de búsqueda */
+
+.search-input:hover {
+    width: 300px; /* Se expande al pasar el mouse */
+}
+.header{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 10px; /* Ajusta la cantidad de padding para mover la barra */
+  background-color: rgb(96, 11, 122);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100; ;
+  
+}
+
+
+/* Efecto hover en el botón de búsqueda */
+  .navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+.contenedor .icono-lopmon {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    pointer-events: none;
+ 
+  }
+  
+
+  .icono-lopmon .texto {
+    font-family: "Poppins", sans-serif;
+    font-size: 19px;
+    color: #ecf0f3;
+    pointer-events: none;
+
+  }
+  /* Efecto hover para el menu con linea*/
+.navbar a:hover::before{
+width: 100%;
+}
+
+  .nav1 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(96, 11, 122);
+}
+
+
+
+/* Estilos para el dropdown */
+.dropdown-content {
+    display: none; /* Ocultar por defecto */
+    position: absolute; /* Posición absoluta para desplegar debajo del elemento padre */
+    background-color: rgb(13, 13, 14);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "Poppins", sans-serif;
+    
+}
+.dropdown-content a:hover {
+    background-color: #b01ddd; /* Color al pasar el cursor */
+}
+
+/* Mostrar el dropdown al pasar el cursor sobre el nav-item */
+.nav-item:hover .dropdown-content {
+    display: block;
+}
+
+.arrow-down {
+    display: inline-block; /* Para poder darle dimensiones */
+    width: 0;
+    height: 0;
+    margin-left: 5px; /* Espacio entre el texto y la flecha */
+    border-left: 5px solid transparent; /* Parte izquierda de la flecha */
+    border-right: 5px solid transparent; /* Parte derecha de la flecha */
+    border-top: 5px solid rgb(255, 255, 255); /* Parte superior de la flecha (color y tamaño) */
+    vertical-align: middle; /* Alinear verticalmente con el texto */
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.navbar-collapse {
+    display: none;
+}
+
+.menu-toggle:checked + .navbar-toggler + .navbar-collapse {
+    display: block;
+}
+ /* Efecto hover para el menu con linea*/
+ .navbar a:hover::before{
+    width: 100%;
+    }
+
+  /* Carrito*/
+  .carrito {
+    position: relative;
+    font-size: 24px;
+    color: #fdfcfc;
+    text-decoration: none;
+  }
+  .carrito i {
+    font-size: 32px;
+    padding: 5px;
+  }
+  #monitores,#accesorios,#memorias,#tarjetas {
+    color: rgb(255, 254, 255); /* Blanco */
+}
+
+

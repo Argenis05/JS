@@ -1,109 +1,85 @@
-/* Estilos generales del header */
-.header {
-    display: flex;
-    justify-content: space-between; /* Espacio entre el logo y la barra de navegación */
-    align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
+body {
+    background-color: lightgrey;
 }
 
-/* Estilo del logo */
-.logo-img {
-    height: 40px;
-    width: auto;
+#kiko-slider {
+    font-family: sans-serif;
+    margin: auto;
+    background-color: white;
+    max-width: 800px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
-/* Estilos para la barra de navegación */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1;
+#kiko-slider>ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
-.navbar a {
+#kiko-slider>ul.slider {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    height: 300px;
+}
+
+#kiko-slider>ul.slider h1 {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, -50%);
+}
+
+#kiko-slider>ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background: #fff;
+}
+
+#kiko-slider>ul.slider li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#kiko-slider>ul.slider li:first-child {
+    opacity: 1;
+    /*Mostramos el primer <li>*/
+}
+
+#kiko-slider>ul.slider li:target {
+    opacity: 1;
+    /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+#kiko-slider>.menu {
+    text-align: center;
+    margin: 20px;
+}
+
+#kiko-slider>.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+#kiko-slider>.menu li a {
+    display: inline-block;
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
-    font-size: 1.1em;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-.navbar a:hover {
-    background-color: #555;
-}
-
-/* Estilos de la barra de búsqueda */
-.search-container {
-    display: flex;
-    align-items: center;
-    background-color: #444;
-    padding: 5px;
-    border-radius: 20px;
-    margin-left: 20px;
-    transition: all 0.3s ease;
-}
-
-.search-input {
-    border: none;
+    background-color: grey;
     padding: 10px;
-    width: 250px; /* Ancho inicial de la barra */
-    border-radius: 15px;
-    outline: none;
-    background-color: #fff;
-    color: #333;
-    font-size: 1em;
-    transition: width 0.4s ease; /* Efecto suave al cambiar el ancho */
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
 }
-
-/* Efecto al hacer hover sobre el campo de búsqueda */
-.search-input:hover {
-    width: 300px; /* Se expande al pasar el mouse */
-}
-
-.search-input:focus {
-    width: 350px; /* Se expande más al hacer foco */
-}
-
-/* Estilos del botón de búsqueda */
-.search-btn {
-    background-color: #3498db;
-    border: none;
-    color: white;
-    padding: 10px;
-    margin-left: 8px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-/* Efecto hover en el botón de búsqueda */
-.search-btn:hover {
-    background-color: #2980b9;
-}
-
-.search-btn:focus {
-    outline: none;
-}
-.icono-lopmon {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .icono-lopmon i {
-    font-size: 32px;
-    margin-right: 10px;
-    color: #3498db; /* Color del icono */
-  }
-  
-  .icono-lopmon .texto {
-    font-size: 24px;
-    font-weight: bold;
-    color: #2c3e50;
-    text-transform: uppercase;
-  }
