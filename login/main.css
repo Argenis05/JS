@@ -79,7 +79,7 @@
     text-decoration: underline;
 }
 #login-form,#registro-form h2 {
-    color: rgb(96, 11, 122); /* Cambia 'blue' por el color que desees */
+    color: rgb(96, 11, 122); 
     text-align: center;
     
 }
